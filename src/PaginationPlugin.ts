@@ -1,11 +1,10 @@
 import type { App } from "vue";
-import Pagination from "./pagination/index.vue";
+import { usePagination, Pagination } from "./pagination";
 
 export default {
   install: (app: App) => {
     app.component("Pagination", Pagination);
-    app.provide;
   },
 };
 
-export { Pagination };
+export { Pagination, usePagination };
