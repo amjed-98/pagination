@@ -1,0 +1,10 @@
+node_modules
+dist
+coverage
+
+src/dummyData.ts
+
+src/styles.css
+src/App.vue
+src/main.ts
+src/components
