@@ -1,6 +1,19 @@
 {
-  "name": "vue.js-pagination",
-  "version": "0.0.0",
+  "name": "amjad-vue3-pagination",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles.css": "./dist/style.css"
+  },
+  "browser": {
+    "./styles.css": "./dist/style.css"
+  },
+  "types": "'./dist/index.vue.d.ts",
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -28,6 +41,7 @@
     "jsdom": "^20.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
+    "rollup-plugin-typescript2": "^0.34.1",
     "sass": "^1.55.0",
     "typescript": "~4.7.4",
     "vite": "^3.0.9",
