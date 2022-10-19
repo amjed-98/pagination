@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import { usePagination, Pagination } from "./pagination";
+import { Pagination } from "./components";
 
 export default {
   install: (app: App) => {
@@ -7,4 +7,5 @@ export default {
   },
 };
 
-export { Pagination, usePagination };
+export { usePagination } from "@/hooks";
+export { Pagination };

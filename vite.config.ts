@@ -12,7 +12,7 @@ export default defineConfig({
     vueJsx(),
     typescript2({
       check: false,
-      include: ["src/pagination/*.vue"],
+      include: ["src/components/*.vue", "src/hooks/*.ts"],
       tsconfigOverride: {
         compilerOptions: {
           sourceMap: true,
@@ -27,9 +27,9 @@ export default defineConfig({
   build: {
     cssCodeSplit: false,
     lib: {
-      entry: "./src/PaginationPlugin.ts",
+      entry: "./src/install.ts",
       formats: ["es", "cjs"],
-      name: "PaginationPlugin",
+      name: "vue3-pagination",
       fileName: (format) => (format === "es" ? "index.js" : "index.cjs"),
     },
     rollupOptions: {
